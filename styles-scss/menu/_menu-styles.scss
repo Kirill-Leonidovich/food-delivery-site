@@ -1,0 +1,110 @@
+/* menu //////////////////////////////////////////////////////////////////////////////////////// */
+
+.menu{
+    background-color: #fff;
+}
+.menu__body {
+    padding: 100px 0px 50px 0px;
+}
+.menu__heading {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.menu__title {
+    margin-bottom: 90px;
+    .title {
+        color: #000;
+    }
+}
+.menu__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 125px;
+}
+.column-menu {
+    @media (min-width: 992px){
+        &:hover{
+            .column-menu__img{
+                img{
+                    text-align: center;
+                    animation-name: rotateImg;
+                    animation-duration: 6s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    @keyframes rotateImg {
+                        100%{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.column-menu__img {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    img{
+        max-width: 100%;
+    }
+}
+.subtitle-column-menu {
+    color: #000;
+    font-family: 'Open Sans Bold';
+    font-size: 28px;
+}
+.column-menu__subtitle{
+    text-align: start;
+    margin-bottom: 30px;
+    padding: 0px 30px 0px 70px;
+}
+.column-menu__text{
+    padding: 0px 30px 0px 70px;
+    text-align: start;
+}
+.text-column-menu {
+    color: #000;
+    font-family: 'Open Sans Regular';
+    font-size: 22px;
+}
+.menu__button {
+    text-align: center;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width:1199px) {
+    .column-menu__text{
+        padding: 0px 10px;
+        text-align: center;
+    }
+    .column-menu__subtitle{
+        padding: 0px 10px;
+        text-align: center;
+    }
+}
+@media (max-width:991px) {
+    .menu__body {
+        padding: 70px 0px 50px 0px;
+    }
+    .menu__row{
+        margin-bottom: 0px;
+        flex-direction: column-reverse;
+    }
+    .column-menu__img{
+        margin-bottom: 0;
+    }
+    .column-menu{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background-color: #34343440;
+        padding: 20px 10px;
+        border-radius: 5px;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:991px){
+    .menu__title {
+        margin-bottom: 40px;
+    }
+}
+/* menu //////////////////////////////////////////////////////////////////////////////////////// */

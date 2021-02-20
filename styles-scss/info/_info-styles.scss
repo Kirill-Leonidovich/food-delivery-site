@@ -1,0 +1,111 @@
+/* info //////////////////////////////////////////////////////////////////////////////////////// */
+
+.info{
+    background-color: #fff;
+}
+.info__body {
+    padding: 130px 0px 190px 0px;
+}
+.info__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 210px;
+}
+.info__column{
+    transition: all 0.4s;
+    border-radius: 10px;
+    padding: 50px 0px 20px 0px;
+    @media (min-width: 992px){
+        &:hover{
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            background-color: #343434;
+            .title-info{
+                color: #fff;
+            }
+            .text-info{
+                color: #fff;
+            }
+        }
+    }
+    &:active{
+        background-color: #dcff4f;
+        .title-info{
+            color: #000;
+        }
+        .text-info{
+            color: #000;
+        }
+    }
+    max-width:  30%;
+}
+.info__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title-info {
+    font-size: 40px;
+    font-family: 'Reey';
+    text-transform: capitalize; 
+    transition: all 0.3s;
+}
+.info__text{
+    padding: 0px 20px;
+}
+.text-info {
+    color: #000;
+    font-family: 'Open Sans Regular';
+    line-height: 25px;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.info__subtitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.info__link {
+    text-align: center;
+    text-transform: lowercase;
+}
+.link-info {
+    font-size: 20px;
+    font-family: 'Open Sans Bold';
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s;
+    @media (min-width: 768px){
+        &:hover{
+            border-bottom: 2px solid #343434;
+        }
+    }
+    &:active{
+        color: #dcff4f;
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width:991px) {
+    .info__row{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .info__column{
+        max-width: 90%;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .info__body {
+        padding: 130px 0px 100px 0px;
+    }
+}
+@media (max-width: 480px) {
+    .title-info{
+        font-size: 28px;
+    }
+    .info__body {
+        padding: 80px 0px 100px 0px;
+    }
+}
+/* info //////////////////////////////////////////////////////////////////////////////////////// */

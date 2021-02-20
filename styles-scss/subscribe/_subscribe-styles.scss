@@ -1,0 +1,126 @@
+/* subscribe /////////////////////////////////////////////////////////////////////////////////// */
+
+.subscribe {
+    background-color: #27292c;
+}
+.subscribe__body {
+    padding: 230px 0px 240px 0px;
+    position: relative;
+}
+.subscribe__heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.subscribe__title {
+    margin-bottom: 70px;
+}
+.title-subscribe {
+    font-size: 74px;
+    color: #fff;
+    font-family: 'Open Sans Bold';
+}
+.subscribe__subtitle {
+    .subtitle {
+        color: #fff;
+    }
+}
+.subscribe__mail {
+    position: relative;
+    max-width: 770px;
+    margin: 0 auto;
+}
+.subscribe__input {
+    width: 100%;
+    padding: 20px 220px 20px 40px;
+    font-size: 24px;
+    color: #8b8a88;
+    text-transform: capitalize;
+    font-family: 'Open Sans Regular';
+    border-radius: 50px;
+}
+.sbuscribe__img {
+    img{
+        position: absolute;
+        top: -50px;
+        max-width: 100%;
+    }
+}
+.subscribe__label{
+    right: -2px;
+    top: -1px;
+    position: absolute;
+    padding: 23px 40px;
+    background-color: #54524f;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    a{
+        font-size: 24px;
+        color: #fff;
+        font-family: 'Open Sans Bold';
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    @media (min-width: 768px){
+        &:hover{
+            background-color: #dcff4f;
+            color: #343434;
+            & a{
+                color: #343434;
+            }
+        }
+    }
+    &:active{
+        background-color: #8b8a88;
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 991px){
+    .sbuscribe__img {
+        img{
+            top: 60px;
+            right: 55px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .title-subscribe{
+        font-size: 50px;
+    }
+    .subscribe__label{
+        padding: 19.5px 20px;
+        a{
+            font-size: 20px;
+        }
+    }
+    .subscribe__input{
+        padding: 15px 180px 15px 40px;
+    }
+    .subscribe__body {
+        padding: 120px 0px 100px 0px;
+    }
+    .sbuscribe__img {
+        img{
+            right: 90px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .subscribe__body {
+        padding: 80px 0px 60px 0px;
+    }
+    .subscribe__input{
+        font-size: 18px;
+        padding: 16.5px 130px 16.5px 40px;
+    }
+    .subscribe__label{
+        a{
+            font-size: 16px;
+        }
+    }
+    .sbuscribe__img {
+        display: none;
+    }
+}
+/* subscribe /////////////////////////////////////////////////////////////////////////////////// */

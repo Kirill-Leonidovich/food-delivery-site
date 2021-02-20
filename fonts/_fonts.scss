@@ -1,0 +1,50 @@
+/* fonts /////////////////////////////////////////////////////////////////////////////////////// */
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('/fonts/Opensans/Regular/OpenSans-Regular.eot');
+    src: url('/fonts/Opensans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Opensans/Regular/OpenSans-Regular.woff') format('woff'),
+    url('/fonts/Opensans/Regular/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('/fonts/Opensans/Semibold/OpenSans-SemiBold.eot');
+    src: url('/fonts/Opensans/Semibold/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Opensans/Semibold/OpenSans-SemiBold.woff') format('woff'),
+    url('/fonts/Opensans/Semibold/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/fonts/Opensans/Bold/OpenSans-Bold.eot');
+    src: url('/fonts/Opensans/Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Opensans/Bold/OpenSans-Bold.woff') format('woff'),
+    url('/fonts/Opensans/Bold/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('/fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+    url('/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reey';
+    src: url('/fonts/Reey/Reey-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+/* fonts /////////////////////////////////////////////////////////////////////////////////////// */

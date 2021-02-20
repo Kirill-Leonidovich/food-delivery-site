@@ -1,0 +1,64 @@
+/* about /////////////////////////////////////////////////////////////////////////////////////// */
+.about {
+    background-color: #27292c;
+}
+.about__body {
+    padding: 120px 0px 70px 0px;
+}
+.about__heading{
+    margin-bottom: 110px;
+    text-align: center;
+}
+.about__row {
+    padding: 0px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+.about__text{
+    padding: 0px 20px;
+}
+.text-about {
+    color: #fff;
+    font-family: 'Open Sans Regular';
+    line-height: 25px;
+    font-size: 18px;
+}
+.about__button {
+    text-align: center;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width:991px) {
+    .about__row{
+        flex-direction: column;
+    }
+    .about__column{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:767px){
+    .about__heading{
+        margin-bottom: 60px;
+    }
+    .about__row{
+        padding: 0px 40px;
+        margin-bottom: 3px;
+    }
+    .text-about{
+        font-size: 16px;
+    }
+}
+@media (max-width:480px){
+    .about__heading{
+        margin-bottom: 40px;
+    }
+    .about__row{
+        padding:0px;
+    }
+    .text-about{
+        text-align: center;
+    }
+}
+/* about /////////////////////////////////////////////////////////////////////////////////////// */
+

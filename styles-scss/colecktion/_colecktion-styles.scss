@@ -1,0 +1,157 @@
+/* colecktion ////////////////////////////////////////////////////////////////////////////////// */
+
+.colecktion {
+    background: url(../../img/main/colecktion/bc-colecktion.png) no-repeat center;
+    background-size: auto 100%;
+}
+.colecktion__body {
+    position: relative;
+    padding: 140px 0px 750px 0px;
+}
+.colecktion__heading {
+    text-align: center;
+    position: relative;
+    @media (min-width: 1200px) {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 160px;
+            height: 12px;
+            background-color: #fff;
+            left: 50%;
+            margin-left: -80px;
+            bottom: -50px;
+        }
+    }
+}
+.colecktion__title {
+    margin-bottom: 80px;
+    .title {
+        font-size: 56px;
+        @media (max-width: 991px) {
+            & {
+                font-size: 45px;
+            }
+        }
+        @media (max-width: 767px) {
+            & {
+                font-size: 35px;
+            }
+        }
+        @media (max-width: 480px) {
+            & {
+                font-size: 30px;
+                line-height: 80px;
+            }
+        }
+    }
+}
+.colecktion__subtitle {
+    .subtitle {
+        color: #fff;
+    }
+}
+.colecktion {
+    .colecktion__conteiner {
+        .colecktion__body {
+            .colecktion__img {
+                .img-colecktion-pitzza-a-piece {
+                    animation-name: rightMarginImg;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    @keyframes rightMarginImg {
+                        100% {
+                            right: 460px;
+                            bottom: -80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.colecktion__img {
+    display: block;
+    img {
+        position: absolute;
+        max-width: 100%;
+    }
+    .img-colecktion-leaves {
+        z-index: 4;
+        top: -70px;
+        left: 0;
+    }
+    .img-colecktion-pitzza-full {
+        transition: all 0.3s;
+        right: 0;
+        top: 390px;
+    }
+    .img-colecktion-pitzza-a-piece {
+        transition: all 0.3s;
+        right: 550px;
+        bottom: -120px;
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1199px) {
+    .colecktion__img {
+        .img-colecktion-pitzza-a-piece {
+            right: 480px;
+            bottom: -80px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .colecktion__body {
+        padding: 140px 0px 600px 0px;
+    }
+    .img-pitzza {
+        .img-colecktion-pitzza-full {
+            max-width: 80%;
+            right: 50px;
+            top: 380px;
+        }
+        .img-colecktion-pitzza-a-piece {
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .colecktion__body {
+        padding: 100px 0px 470px 0px;
+    }
+}
+// Запрос для кортинки пиццы/////////////////////
+@media (max-width: 574px) {
+    .img-pitzza {
+        .img-colecktion-pitzza-full {
+            top: 450px;
+            max-width: 100%;
+            right: 0;
+        }
+    }
+}
+/////////////////////////////////////////////////
+@media (max-width: 480px) {
+    .colecktion__body {
+        padding: 50px 0px 350px 0px;
+    }
+    .colecktion__title {
+        margin-bottom: 30px;
+    }
+    .img-pitzza {
+        .img-colecktion-pitzza-full {
+            top: 350px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .img-pitzza {
+        .img-colecktion-pitzza-full {
+            top: 470px;
+        }
+    }
+}
+/* colecktion ////////////////////////////////////////////////////////////////////////////////// */
